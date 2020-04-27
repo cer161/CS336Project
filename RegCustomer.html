@@ -3,11 +3,34 @@
 <head>
 <meta charset="UTF-8">
 <title>New customer registration</title>
+<link rel="stylesheet" type="text/css" href="CSS_regCust.css">
 </head>
 <body>
+	      <div class="navbar">
+
+         <a href="index.html">Home</a>
+         <a href="#account">Account</a>
+         <div class="hovbar">
+            <button class="dropbtn">Register 
+            </button>
+            <div class="hovbar-content">
+               <a href="RegCustomer.html">New Customer</a>
+               <a href="RegManager.html">New Manager</a>
+            </div>
+         </div>
+         <a href="login.html">Log in</a>
+         <a href="">Reservations</a>
+         <a href="">About us</a>
+      </div>
+
+<br><br>
+
+<div class="parent">
+<div class="form">
+
 
 <form action="RegCustomer.jsp" method="post" >
-Customer account creation </br></br>
+<h2>Customer account creation</h2>
 
 Username:<input type="text" name="acc"/><br>
 Password:<input type="password" name="pass" /><br><br>
@@ -75,6 +98,15 @@ Credit Card Number:<input type="text" name="credit"/><br>
 Preferences:<input type="text" name="pref"/><br>
 
 <input type="submit" />
+	</div>
+</div>
 
+
+  <footer>
+      	<div class="wrapper">
+      			<h3>Flights Inc.</h3>
+      		<a href="https://en.wikipedia.org/wiki/Contact">Contact us</a>
+      	</div>
+      </footer>
 </body>
 </html>

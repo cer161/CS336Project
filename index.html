@@ -1,15 +1,147 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>TravelSite</title>
-</head>
-<body>
+   <head>
+      <link rel="stylesheet" type="text/css" href="CSS.css">
+      <meta charset="UTF-8">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+   </head>
+   <body>
+      <div class="navbar">
 
-Travel Site </br>
+         <a href="#home">Home</a>
+         <a href="#account">Account</a>
+         <div class="hovbar">
+            <button class="dropbtn">Register 
+            </button>
+            <div class="hovbar-content">
+               <a href="RegCustomer.html">New Customer</a>
+               <a href="RegManager.html">New Manager</a>
+            </div>
+         </div>
+         <a href="login.html">Log in</a>
+         <a href="">Reservations</a>
+         <a href="">About us</a>
+      </div>
+      <br>
+      <br>
+      <div class="container">
+         <div class="flight">
+            <div class="search">
+            	<h1>Flight Lookup
+            </h1>
+               <span>Flying from:</span>
+               <br>
+               <input type="text" id="loc_start" placeholder="Starting Point">
+               <input type="date" id="date_start">
+               <br><br><br>
+               <button type="button" class="add_stop">Add Stop</button>
+				<button type="button" class="remove_stop">Remove Stop</button>
+				<div class="stop_info">
+				</div>
+               <br>
+               <span>Going to:</span>
+               <br>
+               <input type="text" id="loc_end" placeholder="Destination">
+               <input type="date" id="date_end">
+               <br>
+               <br>
+               <button class="fl_find">Search </button>
+               <br><br>
+               <img src="https://lh3.googleusercontent.com/proxy/FcYbbGhL8xCSGnrODPwYMgCUbomsRMqoP7_0vics3ZuD8GXlVmNDNO4WQevUn9s6aQY9x0VywjXlqkZN4MAZruQqKq0C3yDtedHn4nRrYLCV3_SixIMJGHrCKujuwC8uXFKNMpI2" height="175px;">
+            </div>
 
-<a href="login.html">Login</a> </br>
-<a href="register.html">Register</a>
+         </div>
+      </div>
+      <br><br><br><br>
+      <div class="parent">
+         <div class="text">
+            <a>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </a>
+         </div>
+      </div>
+      <br><br><br>
+      <div class="container2">
+      	<br><br><br>
+         <h1>Destinations</h1>
+         <br><br><br>
+         <div class="destinations">
+            <div class="stuff1">
+            	<h2>Europe</h2>
+               <div class="europe">
+               	<div class="info">
+               		<p>Paris, France</p>
+               		<br>
+               		<p>Rome,Italy</p>
+               		<br>
+               		<p>Warsaw, Poland</p>
+               	</div>
+               </div>
+            </div>
+            <div class="stuff2">
+            	<h2>Asia</h2>
+               <div class="asia">
+               	               	<div class="info">
+               		<p>Shanghai, China</p>
+               		<br>
+               		<p>Tokyo,Japan</p>
+               	</div>
+                  
+               </div>
+            </div>
+            <div class="stuff3">
+            	<h2>Antarctica</h2>
+               <div class="antarctica">
+               	<div class="info">
+               		<br><br><br>
+               		<h1>?</h1>
+               		
+               	</div>
+               </div>
+            </div>
+            <div class="stuff4">
+            	<h2>South America</h2>
+               <div class="south_america">
+               	<div class="info">
+               		<p>Brasilia, Brazil</p>
+               		<br>
+               		<p>Santiago,Chile</p>
+               	</div>
+                  
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      <script>
+         var stops = 9;
+         var wrap = $(".stop_info"); 
+         var addstop = $(".add_stop");
+         var deletestop = $(".remove_stop");
+         $(addstop).click(function(){
+             var num = wrap[0].childNodes.length;
+             if(num < stops){
+                 $(wrap).append('<input type="text" name="answer[]" class="field-long" placeholder = "stop" />');
+                  $(wrap).append('<input type="date" name="answer[]" class="field-long" />'); 
+                  $(wrap).append('<br>');
+              }
 
-</body>
+         });
+         $(deletestop).click(function(){
+             var num = wrap[0].childNodes.length;
+             if(num > 2){ 
+                wrap[0].childNodes[num-1].remove();
+         		wrap[0].childNodes[num-2].remove();
+         		wrap[0].childNodes[num-3].remove();
+             }
+         });
+      </script>
+   </body>
+
+      <footer>
+      	<div class="wrapper">
+      			<h3>Flights Inc.</h3>
+      		<a href="https://en.wikipedia.org/wiki/Contact">Contact us</a>
+      	</div>
+      </footer>
 </html>

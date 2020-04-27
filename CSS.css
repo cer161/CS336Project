@@ -1,0 +1,227 @@
+body {
+  background-image: url(https://wallpaperplay.com/walls/full/f/9/c/180422.jpg);
+  animation: myanimation 60s   infinite;
+}
+@keyframes myanimation {
+  0% {background-image: url(https://wallpaperplay.com/walls/full/f/9/c/180422.jpg);}
+  33%{background-image:url("https://www.tripsavvy.com/thmb/k0RpAx5Nh0E5QJqlKsJnjzytvbM=/1667x1111/filters:fill(auto,1)/GettyImages-173809571-edit-56aa09403df78cf772ac1a0a.jpg");}
+  66%{background-image: url(https://www.setaswall.com/wp-content/uploads/2017/12/Beach-Resort-Wallpaper-30-1920x1200.jpg);};
+}
+.navbar {
+  display: flex;
+  background-color: #333;
+}
+.navbar a {
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.hovbar .dropbtn {
+  font-size: 16px;  
+  border: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: #333;
+  font-family: inherit;
+}
+
+.navbar a:hover, .hovbar:hover .dropbtn {
+  background-color: red;
+}
+
+.hovbar-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 150px;
+}
+
+.hovbar-content a {
+  color: black;
+  padding: 13px 15px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.hovbar-content a:hover {
+  background-color: red;
+}
+
+.hovbar:hover .hovbar-content {
+  display: block;
+}
+
+
+.search {
+  height: 600px;
+  background-color: rgba(0,0,0,.6);
+  width: 850px;
+  display: inline-block;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+}
+
+.search input, button {
+  border-radius: 5px;
+}
+
+.container {
+  text-align: center;
+}
+.parent {
+  text-align: center;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  display: inline-block;
+  text-align: center;
+  width: 450px;
+}
+.europe {
+  color: white;
+  height: 225px;
+  background-image: url(https://cdn141.picsart.com/316306780081201.jpg?type=webp&to=crop&r=256);
+}
+.europe a {
+  color: white;
+}
+
+.europe:hover{
+ cursor: pointer;
+}
+.europe:hover div{
+  visibility: visible;
+  opacity: 1;
+}
+.asia {
+  color: white;
+  height: 225px;
+  background-image: url(https://cdn141.picsart.com/316306780081201.jpg?type=webp&to=crop&r=256);
+}
+.asia a {
+  color: white;
+}
+
+.asia:hover{
+ cursor: pointer;
+}
+.asia:hover div{
+  visibility: visible;
+  opacity: 1;
+}
+.antarctica {
+  color: white;
+  height: 225px;
+  background-image: url(https://cdn141.picsart.com/316306780081201.jpg?type=webp&to=crop&r=256);
+}
+.antarctica h1 {
+  color: white;
+}
+
+.antarctica:hover{
+ cursor: pointer;
+}
+.antarctica:hover div{
+  visibility: visible;
+  opacity: 1;
+}
+.info {
+  height: 225px;
+  visibility: hidden;
+  background-color: rgba(0,0,0,.8);
+}
+.south_america {
+  color: white;
+  height: 225px;
+  background-image: url(https://cdn141.picsart.com/316306780081201.jpg?type=webp&to=crop&r=256);
+}
+.south_america a {
+  color: white;
+}
+
+.south_america:hover{
+ cursor: pointer;
+}
+.south_america:hover div{
+  visibility: visible;
+  opacity: 1;
+}
+.info:hover {
+  visibility: visible;
+}
+
+.asia{
+  height: 225px;
+  background-image: url(https://adenotter.files.wordpress.com/2014/08/greatwallall.jpg?w=326);
+}
+.antarctica {
+  background-image: url(https://is5-ssl.mzstatic.com/image/thumb/Purple/v4/fa/51/ee/fa51ee74-228e-4d3a-5c3c-5dc275a385b5/source/256x256bb.jpg);
+  height: 225px;
+}
+.south_america {
+  background-image: url(https://lh3.googleusercontent.com/proxy/ciWo8r-bK6g7hG31UIjdXlL3IY5N9ZhPNd-GxobszDHa4j1NIyDio30dmKsLAHO-fiUxBiFKJOw01Vzx0RePrlEEInmvHroNOWuxBPReAc8eJu0iP9Q6yTgSlX7DaKAmhwsuJXdXtGzBgoMz4d_GA1Fwtllpz2DBxi8UAoe-zEdlod1jnovR87SRJaU6qdKMEChE);
+  height: 225px;
+}
+
+.container2 {
+  text-align: center;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+}
+.destinations {
+  text-align: center;
+  display:flex;
+  height: 300px;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  color: black;
+}
+
+.stuff1 {
+  height: 250px;
+  background-color: lightgrey;
+  width: 250px;
+  border-radius: 15px;
+}
+.stuff2 {
+  height: 250px;
+  background-color: lightgrey;
+  width: 250px;
+  border-radius: 15px;
+}
+.stuff3 {
+  height: 250px;
+  background-color: lightgrey;
+  width: 250px;
+  border-radius: 15px;
+}
+.stuff4 {
+  height: 250px;
+  background-color: lightgrey;
+  width: 250px;
+  border-radius: 15px;
+}
+
+.wrapper {
+  text-align: center;
+  color: white;
+}
+
+footer {
+  width: 100%;
+  background-color: #222;
+  padding: 50px 0px;
+  color: white;
+}
+
+.wrapper a {
+  color: white;
+    text-decoration: none;
+}

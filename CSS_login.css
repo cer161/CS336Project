@@ -1,0 +1,89 @@
+body {
+  background-image: url(https://wallpaperplay.com/walls/full/f/9/c/180422.jpg);
+ 
+}
+.navbar {
+  display: flex;
+  background-color: #333;
+}
+.navbar a {
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.hovbar .dropbtn {
+  font-size: 16px;  
+  border: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: #333;
+  font-family: inherit;
+}
+
+.navbar a:hover, .hovbar:hover .dropbtn {
+  background-color: red;
+}
+
+.hovbar-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 150px;
+}
+
+.hovbar-content a {
+  color: black;
+  padding: 13px 15px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.hovbar-content a:hover {
+  background-color: red;
+}
+
+.hovbar:hover .hovbar-content {
+  display: block;
+}
+
+
+.parent {
+  text-align: center;
+  height: 800px;
+}
+
+.form {
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  background-color:  rgba(0,0,0,.6);
+  height: 500px;
+  width: 500px;
+  border-radius: 10px;
+}
+.form input {
+  border-radius: 5px;
+}
+
+
+.wrapper {
+  text-align: center;
+  color: white;
+}
+
+footer {
+  width: 100%;
+  background-color: #222;
+  padding: 50px 0px;
+  color: white;
+
+}
+
+.wrapper a {
+  text-decoration: none;
+  color: white;
+}
