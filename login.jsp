@@ -14,10 +14,12 @@
 //Process input data
 String user=request.getParameter("user");
 String pass=request.getParameter("pass");
-
-
+if(user == "" || pass == ""){
+	out.println("Invalid user or password");
+}
+try{
 Class.forName("com.mysql.jdbc.Driver");
-String url = "jdbc:mysql://127.0.0.1/project";
+String url = "jdbc:mysql://localhost:3306/project?characterEncoding=latin1";
 //my SQL root account's password is root, yours may be different --VVV
 java.sql.Connection con = DriverManager.getConnection(url,"root","root");
 //this creates the SQL statement
@@ -26,7 +28,7 @@ Statement st= con.createStatement();
 ResultSet rs=st.executeQuery("select * from Managers where accMan= '"+user+"'");
 if(rs.next()) //if manager found
 {
-	if(rs.getString(2).equals(pass)) //if pass correct
+	if(rs.getString(2).equals(pass) && pass!= "") //if pass correct
 	{
 		out.println("Welcome " +user);
 		//move to manager page here?
@@ -41,7 +43,7 @@ else //if not manager user, check if customer
 	rs=st.executeQuery("select * from Customers where accCust= '"+user+"'");
 	if(rs.next()) //if customer found
 	{
-		if(rs.getString(2).equals(pass))
+		if(rs.getString(2).equals(pass) && pass!="")
 		{
 			out.println("Welcome " +user);
 			//move to customer page here?
@@ -53,7 +55,10 @@ else //if not manager user, check if customer
 	}
 			
 }
-
+}
+catch(Exception e){
+	System.out.println("Exception was caught " + e);
+}
 %>
 </br>
 <a href="index.html">Home</a>
