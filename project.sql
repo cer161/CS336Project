@@ -30,10 +30,10 @@ CREATE TABLE Customers
 CREATE TABLE Manages
 	(accCust CHAR(20), accMan CHAR(20),
     PRIMARY KEY (accCust, accMan),
-    FOREIGN KEY (accCust) REFERENCES Customers(acc)
+    FOREIGN KEY (accCust) REFERENCES Customers(accCust)
     ON DELETE CASCADE
     ON UPDATE CASCADE,
-    FOREIGN KEY (accMan) REFERENCES Managers(acc)
+    FOREIGN KEY (accMan) REFERENCES Managers(accMan)
     ON DELETE CASCADE
     ON UPDATE CASCADE
     );
@@ -50,8 +50,8 @@ CREATE TABLE Reservations
 						maybe we should have it link to another 
                         table?*/
 	representative CHAR(20),
-    PRIMARY KEY (rid, accCust),
-    FOREIGN KEY (accCust) REFERENCES Customers(acc)
+    PRIMARY KEY (rNum, accCust),
+    FOREIGN KEY (accCust) REFERENCES Customers(accCustsys_config)
     ON DELETE CASCADE
     );
 
@@ -108,10 +108,18 @@ CREATE TABLE Reserves
     FOREIGN KEY (pid) REFERENCES Airports(pid)
     );
 	
-    
-    
-
-    
-    
+    /* Alter tables to create varchars for flexibility */
+ ALTER TABLE customers MODIFY state VARCHAR(20); 
+ ALTER TABLE customers MODIFY pass VARCHAR(20);
+ALTER TABLE customers MODIFY created VARCHAR(20);
+ALTER TABLE customers MODIFY firstName VARCHAR(20);
+ALTER TABLE customers MODIFY lastName VARCHAR(20);
+ALTER TABLE customers MODIFY address VARCHAR(20);
+ALTER TABLE customers MODIFY city VARCHAR(20);
+ ALTER TABLE customers MODIFY zip VARCHAR(20);
+ALTER TABLE customers MODIFY email VARCHAR(20);
+ALTER TABLE customers MODIFY phone VARCHAR(20);
+ALTER TABLE customers MODIFY credit VARCHAR(20);
+ALTER TABLE customers MODIFY pref VARCHAR(20);
 
     
