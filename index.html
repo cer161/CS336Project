@@ -9,7 +9,7 @@
       <div class="navbar">
 
          <a href="#home">Home</a>
-         <a href="#account">Account</a>
+         <a href="account.html">Account</a>
          <div class="hovbar">
             <button class="dropbtn">Register 
             </button>
@@ -19,7 +19,7 @@
             </div>
          </div>
          <a href="login.html">Log in</a>
-         <a href="">Reservations</a>
+         <a href="reservations.html">Reservations</a>
          <a href="about.html">About us</a>
       </div>
       <br>
@@ -27,12 +27,13 @@
       <div class="container">
          <div class="flight">
             <div class="search">
+            <form action="index.jsp" method="post" >
             	<h1>Flight Lookup
             </h1>
                <span>Flying from:</span>
                <br>
-               <input type="text" id="loc_start" placeholder="Starting Point">
-               <input type="date" id="date_start">
+               <input type="text" name="loc_start" placeholder="State, Country">
+               <input type="date" name="date_start" placeholder="mm-dd-yyyy">
                <br><br><br>
                <button type="button" class="add_stop">Add Stop</button>
 				<button type="button" class="remove_stop">Remove Stop</button>
@@ -41,8 +42,8 @@
                <br>
                <span>Going to:</span>
                <br>
-               <input type="text" id="loc_end" placeholder="Destination">
-               <input type="date" id="date_end">
+               <input type="text" name="loc_end" placeholder="State, Country">
+               <input type="date" name="date_end" placeholder="mm-dd-yyyy">
                <br>
                <br>
                <button class="fl_find">Search </button>
