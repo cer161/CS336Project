@@ -63,7 +63,7 @@ catch(Exception e){
 
 %>
 </br>
-<a href="bookflight.jsp">Book Flight</a>
+<a href="bookflight.html">Book Flight</a>
 <a href="index.html">Home</a>
 
 </body>
